@@ -81,6 +81,7 @@ p {
 
 #top-nav .logo-src-small {
 	width: 218px;
+	vertical-align: middle;
 	-webkit-transition: all 1s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -112,8 +113,7 @@ p {
 	text-decoration: underline;
 }
 
-/*** Styles to handle top navigation resize on scroll ***/
-
+/*** BEGIN - Styles to handle top navigation resize on scroll ***/
 #top-nav.smaller {
     height: 75px;
 }
@@ -128,10 +128,16 @@ p {
     line-height: 75px;
 		font-size: 14px;
 }
+/*** END - Styles to handle top navigation resize on scroll ***/
+
+
+/*** Large image area below Navigation - Sign-Up ***/
+.sign-up {
+	margin-top: 150px;
+}
+
 
 /*** Styles to handle top navigation responsive for mobile view ***/
-
-/**********************  NOT WORKING NEED TO FIX UP THE NAV TO HANDLE SMALLER SCREEN ****************/
 
 @media all and (max-width: 960px) {
 
