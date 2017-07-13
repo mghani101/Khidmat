@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	color: #44545E;
+	margin: 0;
+}
+
+h1, h2, h3, h4, a {
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	color: #7B98AA;
+}
+
+a:hover {
+	color: #44545E
+}
+
+p {
+	text-transform: none;
+	font-family: "Lato", sans-serif;
+}
+
+/*** Fixed top navigation setup ***/
+
+#top-nav {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #ffffff;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+#top-nav .logo-img {
+	display: inline-block;
+	height: 150px;
+	line-height: 150px;
+	float: left;
+	-webkit-transition: all 1s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	margin: 0 0 0 60px;
+}
+
+#top-nav .logo-src {
+	width: 350px;
+	vertical-align: middle;
+	-webkit-transition: all 1s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#top-nav .logo-src-small {
+	width: 218px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#top-nav nav {
+	display: inline-block;
+	float: right;
+	margin: 0 60px 0 0;
+}
+
+#top-nav nav a {
+	line-height: 150px;
+	margin-left: 20px;
+	color: #FDBD10;
+	font-weight: 700;
+	font-size: 18px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#top-nav nav a:hover {
+	color: #F79420;
+	text-decoration: underline;
+}
+
+/*** Styles to handle top navigation resize on scroll ***/
+
+#top-nav.smaller {
+    height: 75px;
+}
+
+#top-nav .logo-img.smaller {
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#top-nav nav.smaller a {
+    line-height: 75px;
+		font-size: 14px;
+}
+
+/*** Styles to handle top navigation responsive for mobile view ***/
+
+/**********************  NOT WORKING NEED TO FIX UP THE NAV TO HANDLE SMALLER SCREEN ****************/
+
+@media all and (max-width: 960px) {
+
+		#top-nav .logo-img {
+			display: block;
+			float: none;
+			margin: 0 auto;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+
+		#top-nav .logo-src {
+			margin-top: 10px;
+		}
+
+		#top-nav .navbar-main {
+			display: block;
+			float: none;
+			height: 50px;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		#top-nav .navbar-main a {
+			line-height: 50px;
+			margin: 0 10px;
+		}
+
+		#top-nav.smaller {
+        height: 75px;
+				padding-top: 5px;
+    }
+
+    #top-nav .logo-img.smaller {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+		#top-nav .logo-src.smaller {
+			margin-top: 0px;
+		}
+
+    #top-nav.smaller nav {
+        height: 35px;
+    }
+    #top-nav nav.smaller a {
+        line-height: 35px;
+    }
+}
