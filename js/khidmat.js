@@ -20,3 +20,13 @@ $(function () {
     }
 	});
 });
+
+/*
+Function to handle the scroll when link is clicked
+*/
+$(".page-link").on("click", function() {
+  var page = $(this).attr('href');
+
+  $('html, body').animate({
+     scrollTop: $(page).offset().top-75 }, 500);
+});
