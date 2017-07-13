@@ -11,5 +11,12 @@ $(function () {
     $navImg.toggleClass('smaller', $(this).scrollTop() > $nav.height());
     $navLink.toggleClass('smaller', $(this).scrollTop() > $nav.height());
     $navImgSrc.toggleClass('smaller', $(this).scrollTop() > $nav.height());
+
+    if ($(this).scrollTop() > $nav.height()) {
+      $(".logo-src").addClass("logo-src-small");
+    }
+    else {
+      $(".logo-src").removeClass("logo-src-small");
+    }
 	});
 });
