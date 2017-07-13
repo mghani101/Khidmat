@@ -11,14 +11,5 @@ $(function () {
     $navImg.toggleClass('smaller', $(this).scrollTop() > $nav.height());
     $navLink.toggleClass('smaller', $(this).scrollTop() > $nav.height());
     $navImgSrc.toggleClass('smaller', $(this).scrollTop() > $nav.height());
-
-    if ($(this).scrollTop() > $nav.height()) {
-      $(".logo-src").addClass("logo-src-small");
-      //  $(".logo-src").attr("src", "images/khidmat-logo-small.png");
-    }
-    else {
-      $(".logo-src").removeClass("logo-src-small");
-      // $(".logo-src").attr("src", "images/khidmat-logo.png");
-    }
 	});
 });
