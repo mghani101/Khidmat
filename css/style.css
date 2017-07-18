@@ -30,6 +30,10 @@ p {
 	font-family: "Lato", sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 /*** Fixed top navigation setup ***/
 
 #top-nav {
