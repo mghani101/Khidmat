@@ -30,10 +30,6 @@ p {
 	font-family: "Lato", sans-serif;
 }
 
-img {
-	max-width: 100%;
-}
-
 /*** Fixed top navigation setup ***/
 
 #top-nav {
@@ -138,6 +134,12 @@ img {
 /*** Large image area below Navigation - Sign-Up ***/
 .sign-up {
 	margin-top: 150px;
+	background-image: url("../images/khidmat-large-header.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+	height: 320px;
 }
 
 
