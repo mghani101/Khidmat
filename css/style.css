@@ -16,6 +16,10 @@ h1, h2, h3, h4, a {
 	font-weight: 600;
 }
 
+h1 {
+	font-size: 35px;
+}
+
 a {
 	text-decoration: none;
 	color: #7B98AA;
@@ -142,6 +146,20 @@ p {
 	height: 320px;
 }
 
+span.k-icon {
+	width: 30px;
+  height: 30px;
+  display: inline-block;
+	background-image: url("../images/khidmat-icon.png");
+	background-size: 30px 30px;
+	vertical-align: middle;
+}
+h1.k-icon-label {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 /*** Styles to handle top navigation responsive for mobile view ***/
 
