@@ -65,6 +65,10 @@ p {
 	display: none;
 }
 
+.navbar-sibebar {
+	display: none;
+}
+
 #top-nav .logo-img {
 	display: inline-block;
 	height: 150px;
@@ -401,7 +405,7 @@ h1.k-icon-label {
 		display: inline-block;
 		float: right;
 		margin-right: 20px;
-		margin-top: 20px;
+		padding: 20px 0px 20px 0px;
 		cursor: pointer;
 	}
 
@@ -434,6 +438,28 @@ h1.k-icon-label {
 		border-bottom: 4px solid #FDBD10;
 		width: 35px;
 		margin-bottom: 6px;
+	}
+
+	div.navbar-sibebar {
+	  width: 300px;
+	  height: 100%;
+	  background-color: #48a770;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  padding: 20px 0;
+		z-index: 999;
+	}
+
+	.navbar-sibebar {
+		display: block;
+  	transition: all 0.3s ease;
+  	transform: translateX(100%);
+	}
+
+	.sidebar-active {
+		transition: all 0.3s ease;
+  	transform: translateX(0%);
 	}
 
 	.sign-up {

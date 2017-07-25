@@ -67,6 +67,22 @@ $(".page-link").on("click", function() {
 
 
 /*
+Function to handle the hamburger sidebar menu
+*/
+$('.navbar-small').on('click', function () {
+	$('.navbar-sibebar').addClass('sidebar-active');
+});
+
+$('.close').on('click', function () {
+	$('.sidebar').removeClass('active');
+});
+
+$('.navbar-sibebar a').on('click', function () {
+	$('.navbar-sibebar').removeClass('sidebar-active');
+});
+
+
+/*
 Function to handle the tabs in the services area
 */
 
