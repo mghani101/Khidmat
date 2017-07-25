@@ -400,6 +400,9 @@ h1.k-icon-label {
 	#top-nav .navbar-small {
 		display: inline-block;
 		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+		cursor: pointer;
 	}
 
 	#top-nav.smaller nav {
@@ -415,6 +418,11 @@ h1.k-icon-label {
 		margin-top: 0px;
 	}
 
+	#top-nav .logo-src-small {
+		width: 180px;
+		margin-left: 20px;
+	}
+
 	#top-nav nav {
 			height: 35px;
 	}
@@ -422,19 +430,15 @@ h1.k-icon-label {
 			line-height: 35px;
 	}
 
+	.line {
+		border-bottom: 4px solid #FDBD10;
+		width: 35px;
+		margin-bottom: 6px;
+	}
+
 	.sign-up {
 		margin-top: 75px;
 	}
-
-	/*
-	#top-nav .navbar-small {
-		display: block;
-	}
-
-	#top-nav .navbar-main {
-		display: none;
-	}
-	*/
 
 
 }
