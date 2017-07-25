@@ -61,6 +61,10 @@ p {
   height: 0;
 }
 
+#top-nav .navbar-small {
+	display: none;
+}
+
 #top-nav .logo-img {
 	display: inline-block;
 	height: 150px;
@@ -372,4 +376,65 @@ h1.k-icon-label {
     #top-nav nav.smaller a {
         line-height: 35px;
     }
+}
+
+
+@media all and (max-width: 850px) {
+
+	#top-nav {
+			height: 75px;
+			padding-top: 5px;
+	}
+
+	#top-nav .logo-img {
+			float: left;
+			display: inline-block;
+	}
+
+	#top-nav .logo-img.smaller {
+			height: 60px;
+			line-height: 60px;
+			font-size: 30px;
+	}
+
+	#top-nav .navbar-small {
+		display: inline-block;
+		float: right;
+	}
+
+	#top-nav.smaller nav {
+			height: 70px;
+			line-height: 70px;
+	}
+
+	#top-nav .navbar-main {
+		display: none;
+	}
+
+	#top-nav .logo-src {
+		margin-top: 0px;
+	}
+
+	#top-nav nav {
+			height: 35px;
+	}
+	#top-nav nav a {
+			line-height: 35px;
+	}
+
+	.sign-up {
+		margin-top: 75px;
+	}
+
+	/*
+	#top-nav .navbar-small {
+		display: block;
+	}
+
+	#top-nav .navbar-main {
+		display: none;
+	}
+	*/
+
+
 }

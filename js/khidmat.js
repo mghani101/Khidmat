@@ -1,22 +1,55 @@
 /*
+Function to check if window has been resized for repsonsive menu
+*/
+$(document).ready(function () {
+  var $window = $(window);
+
+  function checkWidth(){
+    var windowSize = $window.width();
+
+    if(windowSize < 851) {
+      $("#top-nav").addClass("smaller");
+      $(".logo-img").addClass("smaller");
+      $(".navbar-main").addClass("smaller");
+      $(".logo-src").addClass("smaller");
+      $(".logo-src").addClass("logo-src-small");
+    }
+    else {
+      $("#top-nav").removeClass("smaller");
+      $(".logo-img").removeClass("smaller");
+      $(".navbar-main").removeClass("smaller");
+      $(".logo-src").removeClass("smaller");
+      $(".logo-src").removeClass("logo-src-small");
+    }
+  }
+
+  checkWidth();
+  $(window).resize(checkWidth);
+
+})
+
+/*
 Function to handle resizing the navigation bar when the page is scrolled.
 */
 $(function () {
   $(document).scroll(function () {
-	  var $nav = $("#top-nav");
-    var $navImg = $(".logo-img");
-    var $navLink = $(".navbar-main");
-    var $navImgSrc = $(".logo-src");
-	  $nav.toggleClass('smaller', $(this).scrollTop() > $nav.height());
-    $navImg.toggleClass('smaller', $(this).scrollTop() > $nav.height());
-    $navLink.toggleClass('smaller', $(this).scrollTop() > $nav.height());
-    $navImgSrc.toggleClass('smaller', $(this).scrollTop() > $nav.height());
 
-    if ($(this).scrollTop() > $nav.height()) {
-      $(".logo-src").addClass("logo-src-small");
-    }
-    else {
-      $(".logo-src").removeClass("logo-src-small");
+    if($(window).width() > 850) {
+      var $nav = $("#top-nav");
+      var $navImg = $(".logo-img");
+      var $navLink = $(".navbar-main");
+      var $navImgSrc = $(".logo-src");
+	    $nav.toggleClass('smaller', $(this).scrollTop() > $nav.height());
+      $navImg.toggleClass('smaller', $(this).scrollTop() > $nav.height());
+      $navLink.toggleClass('smaller', $(this).scrollTop() > $nav.height());
+      $navImgSrc.toggleClass('smaller', $(this).scrollTop() > $nav.height());
+
+      if ($(this).scrollTop() > $nav.height()) {
+        $(".logo-src").addClass("logo-src-small");
+      }
+      else {
+        $(".logo-src").removeClass("logo-src-small");
+      }
     }
 	});
 });
